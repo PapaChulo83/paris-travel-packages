@@ -1,0 +1,207 @@
+{
+  "packages": {
+    "basic": {
+      "name": "Basic Package",
+      "description": "Essential Paris experience with flight and accommodation",
+      "basePrice": 1099,
+      "duration": "7 days/6 nights",
+      "includes": {
+        "flight": {
+          "type": "Economy with stopover",
+          "value": 500
+        },
+        "accommodation": {
+          "type": "3* hotel with breakfast",
+          "value": 405,
+          "details": "Price per person (double occupancy)"
+        }
+      },
+      "note": "Most basic option for budget-conscious travelers"
+    },
+    "essential": {
+      "name": "Essential Package",
+      "description": "Basic package plus core Paris activities",
+      "basePrice": 1299,
+      "duration": "7 days/6 nights",
+      "includes": {
+        "flight": {
+          "type": "Economy with stopover",
+          "value": 500
+        },
+        "accommodation": {
+          "type": "3* hotel with breakfast",
+          "value": 405,
+          "details": "Price per person (double occupancy)"
+        },
+        "activities": {
+          "included": [
+            {
+              "name": "Seine River Cruise",
+              "value": 40
+            },
+            {
+              "name": "Eiffel Tower Access",
+              "value": 30
+            }
+          ]
+        },
+        "transport": {
+          "type": "7-day Paris transport pass",
+          "value": 30
+        }
+      }
+    },
+    "halfBoard": {
+      "economy": {
+        "name": "Economy Half Board",
+        "description": "Essential package plus dinner experiences",
+        "basePrice": 1499,
+        "includes": {
+          "base": "essential",
+          "dining": {
+            "type": "6 dinners",
+            "value": 150,
+            "perMeal": 25
+          },
+          "activities": {
+            "additionalCount": 2,
+            "value": 100
+          }
+        }
+      },
+      "comfort": {
+        "name": "Comfort Half Board",
+        "description": "Enhanced comfort with better dining and activities",
+        "basePrice": 2699,
+        "includes": {
+          "flight": {
+            "type": "Direct flight",
+            "value": 900
+          },
+          "accommodation": {
+            "type": "4* hotel with breakfast",
+            "value": 675,
+            "details": "Price per person (double occupancy)"
+          },
+          "dining": {
+            "type": "6 upscale dinners",
+            "value": 360,
+            "perMeal": 60
+          },
+          "activities": {
+            "count": 3,
+            "type": "Premium activities",
+            "value": 300
+          }
+        }
+      },
+      "luxury": {
+        "name": "Luxury Half Board",
+        "description": "Premium experience with gourmet dining",
+        "basePrice": 7999,
+        "includes": {
+          "flight": {
+            "type": "Business Class",
+            "value": 3000
+          },
+          "accommodation": {
+            "type": "5* luxury hotel with breakfast",
+            "value": 1950,
+            "details": "Price per person (double occupancy)"
+          },
+          "dining": {
+            "type": "6 gourmet dinners",
+            "value": 900,
+            "perMeal": 150
+          },
+          "activities": {
+            "count": 4,
+            "type": "VIP experiences",
+            "value": 1000
+          }
+        }
+      }
+    },
+    "fullBoard": {
+      "economy": {
+        "name": "Economy Full Board",
+        "basePrice": 1699,
+        "extends": "halfBoard.economy",
+        "additionalIncludes": {
+          "dining": {
+            "type": "6 lunches",
+            "value": 120,
+            "perMeal": 20
+          }
+        }
+      },
+      "comfort": {
+        "name": "Comfort Full Board",
+        "basePrice": 2999,
+        "extends": "halfBoard.comfort",
+        "additionalIncludes": {
+          "dining": {
+            "type": "6 upscale lunches",
+            "value": 210,
+            "perMeal": 35
+          }
+        }
+      },
+      "luxury": {
+        "name": "Luxury Full Board",
+        "basePrice": 8499,
+        "extends": "halfBoard.luxury",
+        "additionalIncludes": {
+          "dining": {
+            "type": "6 gourmet lunches",
+            "value": 420,
+            "perMeal": 70
+          }
+        }
+      }
+    }
+  },
+  "addons": {
+    "activities": {
+      "culturalTours": {
+        "name": "Cultural Tours",
+        "options": [
+          {
+            "name": "Louvre Guided Tour",
+            "price": 65
+          },
+          {
+            "name": "Versailles Day Trip",
+            "price": 90
+          }
+        ]
+      },
+      "experiences": {
+        "name": "Special Experiences",
+        "options": [
+          {
+            "name": "Wine Tasting",
+            "price": 85
+          },
+          {
+            "name": "Cooking Class",
+            "price": 120
+          }
+        ]
+      }
+    },
+    "transport": {
+      "name": "Transportation Options",
+      "options": [
+        {
+          "name": "Private Airport Transfer",
+          "price": 80
+        },
+        {
+          "name": "Daily Private Driver",
+          "price": 350
+        }
+      ]
+    }
+  }
+}
